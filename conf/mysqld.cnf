@@ -81,7 +81,8 @@ log_error = /var/log/mysql/error.log
 #log_slow_queries	= /var/log/mysql/mysql-slow.log
 #long_query_time = 2
 # lee add 2018-8-18 begin
-log_slow_queries    = /var/log/mysql/mysql-slow.log
+slow_query_log = on 
+slow-query-log-file = /var/log/mysql/mysql-slow.log     # 5.6版本之后慢查询日志文件变量名改了
 long_query_time     = 1     # 定义超过1s的查询为慢查询
 # lee add 2018-8-18 end
 #log-queries-not-using-indexes
